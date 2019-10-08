@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+
+node_modules/.bin/surge ./build elm-masonry.surge.sh

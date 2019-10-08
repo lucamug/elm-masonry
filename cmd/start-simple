@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+
+elm-live/bin/elm-live.js src/Simple.elm --ide=atom --dir=docs --start-page=simple.html --path-to-elm=node_modules/.bin/elm --port=8001 -- --output=docs/elm-masonry-simple.js --debug

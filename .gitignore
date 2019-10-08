@@ -1,0 +1,12 @@
+# Generated files
+docs/elm-masonry.js
+docs/elm-masonry-simple.js
+
+# Dependency directories
+elm-stuff
+node_modules
+
+# Desktop Services Store on macOS
+.DS_Store
+
+build/
