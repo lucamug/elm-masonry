@@ -1,12 +1,10 @@
 module Simple exposing (main)
 
-import Array
 import Element exposing (..)
 import Element.Background as Background
 import Element.Border as Border
 import Element.Font as Font
 import Html
-import List.Extra
 import Masonry exposing (..)
 
 

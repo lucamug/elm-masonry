@@ -6,12 +6,10 @@ import Browser.Events
 import Element exposing (..)
 import Element.Background as Background
 import Element.Border as Border
-import Element.Events as Events
 import Element.Font as Font
 import Element.Input as Input
 import Html
 import Html.Attributes
-import Html.Events
 import List.Extra as List
 import Masonry
 import Svg
@@ -741,8 +739,8 @@ view model =
                 , width fill
                 , inFront <|
                     el
-                        ([ htmlAttribute <| Html.Attributes.style "transition" "all 0.2s" ]
-                            ++ (if model.menuOpen then
+                        ((htmlAttribute <| Html.Attributes.style "transition" "all 0.2s")
+                            :: (if model.menuOpen then
                                     []
 
                                 else

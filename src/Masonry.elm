@@ -2,10 +2,6 @@ module Masonry exposing (fromItems)
 
 import Array
 import Element exposing (..)
-import Element.Background as Background
-import Element.Border as Border
-import Element.Font as Font
-import Html
 import List.Extra
 
 
@@ -47,11 +43,6 @@ positionOfShortestHeight listOfHeights =
 minimumHeightPosition : Masonry -> Position
 minimumHeightPosition masonry =
     masonry |> columnsHeights |> positionOfShortestHeight
-
-
-newColumn : Position -> Height -> List ( Position, Height ) -> List ( Position, Height )
-newColumn position height column =
-    ( position, height ) :: column
 
 
 addItemToMasonry : Position -> Height -> Masonry -> Masonry
